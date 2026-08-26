@@ -76,3 +76,4 @@ userTwo.email = "nitish@google.com"
 console.log(userOne.email);
 console.log(userTwo.email);
 
+// Datatypes summary*******
