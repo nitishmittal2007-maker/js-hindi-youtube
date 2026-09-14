@@ -18,6 +18,18 @@ let myCreatedDate = new Date("05-23-2026")
 
 let myTimeStamp = Date.now()
 
-console.log(myTimeStamp);// give value in milliseconds
-console.log(myCreatedDate.getTime());// give value in milliseconds
-console.log(Math.floor(Date.now()/1000));// give value in seconds
+// console.log(myTimeStamp);// give value in milliseconds
+// console.log(myCreatedDate.getTime());// give value in milliseconds
+// console.log(Math.floor(Date.now()/1000));// give value in seconds
+
+let newDate = new Date()
+console.log(newDate);
+console.log(newDate.getMonth());// month starting from '0' index,you can add 1 in month for correct '1' indexing.
+console.log(newDate.getDay());// return day starting from monday.
+
+// `${newDate.getDay()} and the time `
+
+newDate.toLocaleString('default', {
+    weekday: "long"
+})// we can customize locale string further by this function.
+
